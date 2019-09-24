@@ -1,0 +1,16 @@
+#v1.0
+#contact: piotr4@gmail.com
+#GPLv3
+
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=inode/directory
+Actions=openk4dirstat
+X-KDE-Priority=TopLevel
+#InitialPreference=-1
+
+[Desktop Action openk4dirstat]
+Name=Start k4DirStat Here
+Icon=k4dirstat
+Exec=k4dirstat %u
