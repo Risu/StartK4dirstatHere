@@ -13,4 +13,4 @@ X-KDE-Priority=TopLevel
 [Desktop Action openk4dirstat]
 Name=Start k4DirStat Here
 Icon=k4dirstat
-Exec=k4dirstat %u
+Exec=bash -c 'type k4dirstat; if [ $? -eq 0 ]; then k4dirstat "%u"; else kdialog --title "Package missing" --error "Please install k4dirstat from package manager."; fi;';
